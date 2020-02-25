@@ -5,10 +5,13 @@ var app = express()
 app.use(express.static('Assets'))
 app.get('/', function(req , res){
     console.log('conecctionmade')
-    res.sendFile('C:\\Users\\User\\Desktop\\TEST\\index.html');
+    res.sendFile(__dirname+'/index.html');
 })
 
-
+app.get('/subjects', function(req , res){
+    console.log('conecctionmade')
+    res.sendFile(__dirname+"/subjects.html");
+})
 
     //handle incomming requests here..
 
