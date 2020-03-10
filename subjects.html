@@ -1,0 +1,120 @@
+<style>
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+<html>
+<body> 
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Biology')">Biology</button>
+        <button class="tablinks" onclick="openCity(event, 'Art')">Art</button>
+        <button class="tablinks" onclick="openCity(event, 'Anatomy')">Anatomy</button>
+        <button class="tablinks" onclick="openCity(event, 'Chemistry')">Chemistry</button>
+        <button class="tablinks" onclick="openCity(event, 'Civil Engineering')">Civil Engineering</button>
+        <button class="tablinks" onclick="openCity(event, 'Math')">Math</button>
+        <button class="tablinks" onclick="openCity(event, 'Mechanical Engineering')">Mechanical Engineering</button>
+      </div>
+      
+      <!-- Tab content -->
+      <div id="Biology" class="tabcontent">
+        <h1>Biology</h1>
+        <p>Biology The word Biology is derived from the Greek words “Bios” meaning Life, and “Logos” meaning Study.</p>
+        <p>
+          <img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+      </div>
+      
+      <div id="Art" class="tabcontent">
+        <h1>Art</h1>
+        <p>Art is the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.</p>
+        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+      </div>
+      
+      <div id="Anatomy" class="tabcontent">
+        <h1>Anatomy</h1>
+        <p>Anatomy is the branch of science concerned with the bodily structure of humans, animals, and other living organisms, especially as revealed by dissection and the separation of parts.</p>
+        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+      </div>
+
+      <div id="Chemistry" class="tabcontent">
+          <h1>Chemistry</h1>
+          <p>Chemistry is the branch of science that deals with the identification of the substances of which matter is composed; the investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes to form new substances.</p>
+          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+          </p>
+      </div>
+
+      <div id="Civil Engineering" class="tabcontent">
+          <h1>Civil Engineering</h1>
+          <p>Civil Engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.</p>
+          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+          </p>
+      </div>
+
+      <div id="Math" class="tabcontent">
+          <h1>Math</h1>
+          <p>Math is the calculation or the conclusion based on the relevant facts and figures.</p>
+          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+          </p>
+      </div>
+
+      <div id="Mechanical Engineering" class="tabcontent">
+          <h1>Mechanical Engineering</h1>
+          <p>Mechanical Engineering is the the branch of engineering dealing with the design, construction, and use of machines.</p>
+          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+          </p>
+      </div>
+        
+      <script>
+        function openCity(evt, School) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(School).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+</body>
+
+</html>
