@@ -1,192 +1,123 @@
-<style>
-  html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  .row{
-    display:flex;
-  }
-  .column {
-    float: left;
-    width: 25.4%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  </style>
+<link rel="stylesheet" type="text/css" href="css\index.css">
+
 
 <html>
-    <body>
-        <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
 
-        <hr size="5" noshade>           
-        
+<body>
+    <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
 
-        <div style ="padding-left: 100px; padding-right: 100px; padding-top: 40px">
+    <hr size="5" noshade>
+
+    <div style="padding-left: 100px; padding-right: 100px; padding-top: 40px">
+        <button onclick="location.href='subjects';" type="button">
+            Explore 3D Models</button>
         <h1>
-              What is Scholar?
+            What is Scholar?
         </h1>
-     
-     <p>
-       
-     <p>Our organization ScholAR is a website that will provide users with the ability to explore 3D digital model of their 
-        desired subjects in Augmented Reality</p>
-       <p>Augmented Reality is being used increasingly in education today, bringing a geat impact on the learning experience</p> 
-        <p>A more enjoyable time exploring , keeping your attention AR is the way to make books more interactive</p>
-        <p>Fun and knowledge a great combinacion, our website will provide both</p>
-     
-    <p>
-        <img src="programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
 
+        <p>
 
-        <ul>
-            <li>A more enjoyable time exploring different subjects</li>
-            <li>A way to make books more interactive</li>
-            <li>Used increasingly in education</li>
-            <li>A great impact on students learning experience</li>
-            <li>Enhance your knowledge</li>
-            <li>No age or level education bounds to your research</li>
-          </ul>     
-        
-   
-        </p>
+            <p>Our organization ScholAR is a website that will provide users with the ability to explore 3D digital model of their desired subjects in Augmented Reality</p>
+            <p>Augmented Reality is being used increasingly in education today, bringing a geat impact on the learning experience</p>
+            <p>A more enjoyable time exploring , keeping your attention AR is the way to make books more interactive</p>
+            <p>Fun and knowledge a great combinacion, our website will provide both</p>
 
-<!-- <img src="img_girl.jpg" alt="President" width="150" height="100">
-<img src="img_girl.jpg" alt="vice president" width="150" height="100" style="padding-left: 30px";>
-<img src="img_girl.jpg" alt="Operation Manager" width="150" height="100"style="padding-left: 30px";>
-<img src="img_girl.jpg" alt="Director of Marketing" width="150" height="100"style="padding-left: 30px";>
-<img src="img_girl.jpg" alt="Director of Accounting" width="150" height="100"style="padding-left: 30px";>
-<img src="img_girl.jpg" alt="Director of Engeenering" width="150" height="100"style="padding-left: 30px";> -->
+            <p>
+                <img src="programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
 
+                <ul>
+                    <li>A more enjoyable time exploring different subjects</li>
+                    <li>A way to make books more interactive</li>
+                    <li>Used increasingly in education</li>
+                    <li>A great impact on students learning experience</li>
+                    <li>Enhance your knowledge</li>
+                    <li>No age or level education bounds to your research</li>
+                </ul>
 
+            </p>
 
+            <div class="team">
 
-<div class ="team">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="img1.jpg" alt="Samuel" style="width:100%">
+                            <div class="container">
+                                <h2>Samuel Ballesteros</h2>
+                                <p class="title">CEO/Art Director</p>
+                                <p>Bachelor Computer Sience Cyber Security.</p>
+                                <p>SBallesteros@saintpeters.edu</p>
+                                <p><button class="button">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="img1.jpg" alt="Samuel" style="width:100%">
-      <div class="container">
-        <h2>Samuel Ballesteros</h2>
-        <p class="title">CEO/Art Director</p>
-        <p>Bachelor Computer Sience Cyber Security.</p>
-        <p>SBallesteros@saintpeters.edu</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div> 
- 
+                    <div class="column">
+                        <div class="card">
+                            <img src="img2.jpg" alt="Mario" style="width:100%">
+                            <div class="container">
+                                <h2>Mario Antonio Martinez</h2>
+                                <p class="title">Software Engeneer</p>
+                                <p>Bachelor Computer Science Cyber Security.</p>
+                                <p>MMartinez@Sainpeters.eduj</p>
+                                <p><button class="button">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="img2.jpg" alt="Mario" style="width:100%">
-      <div class="container">
-        <h2>Mario Antonio Martinez</h2>
-        <p class="title">Software Engeneer</p>
-        <p>Bachelor Computer Science Cyber Security.</p>
-        <p>MMartinez@Sainpeters.eduj</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img3.jpg" alt="Julian" style="width:100%">
+                            <div class="container">
+                                <h2>Julian Mayugba</h2>
+                                <p class="title">Software Engeneer</p>
+                                <p>Bachelor Computer Science Cyber Security.</p>
+                                <p>JMayugba@Sainpeters.edu</p>
+                                <p><button class="button">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="img3.jpg" alt="Julian" style="width:100%">
-      <div class="container">
-        <h2>Julian Mayugba</h2>
-        <p class="title">Software Engeneer</p>
-        <p>Bachelor Computer Science Cyber Security.</p>
-        <p>JMayugba@Sainpeters.edu</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img4.jpg" alt="Sundus" style="width:100%">
+                            <div class="container">
+                                <h2>Sundus Elmosallamy</h2>
+                                <p class="title">Software Engeneer</p>
+                                <p>Bachelor Computer Science Cyber Security.</p>
+                                <p>SElmosallamy@Sainpeters.edu</p>
+                                <p><button class="button">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="img4.jpg" alt="Sundus" style="width:100%">
-      <div class="container">
-        <h2>Sundus Elmosallamy</h2>
-        <p class="title">Software Engeneer</p>
-        <p>Bachelor Computer Science Cyber Security.</p>
-        <p>SElmosallamy@Sainpeters.edu</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img5.jpg" alt="Brandon" style="width:100%">
+                            <div class="container">
+                                <h2>Brandon Seelall</h2>
+                                <p class="title">Software Engeneer</p>
+                                <p>Bachelor Computer Science Cyber Security.</p>
+                                <p>BSeelall@Sainpeters.edu</p>
+                                <p><button class="button">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="column">
-  <div class="card">
-    <img src="img5.jpg" alt="Brandon" style="width:100%">
-    <div class="container">
-      <h2>Brandon Seelall</h2>
-      <p class="title">Software Engeneer</p>
-      <p>Bachelor Computer Science Cyber Security.</p>
-      <p>BSeelall@Sainpeters.edu</p>
-      <p><button class="button">Contact</button></p>
-    </div>
-  </div>
-</div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img6.jpg" alt="Maicol" style="width:100%">
+                            <div class="container">
+                                <h2>Maicol Baez</h2>
+                                <p class="title">Software Engeneer</p>
+                                <p>Bachelor Computer Science Cyber Security.</p>
+                                <p>MBaez@Sainpeters.edu</p>
+                                <p><button class="button">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="column">
-  <div class="card">
-    <img src="img6.jpg" alt="Maicol" style="width:100%">
-    <div class="container">
-      <h2>Maicol Baez</h2>
-      <p class="title">Software Engeneer</p>
-      <p>Bachelor Computer Science Cyber Security.</p>
-      <p>MBaez@Sainpeters.edu</p>
-      <p><button class="button">Contact</button></p>
-    </div>
-  </div>
-</div>
-
-</div>
+                </div>
 
 </body>
 
