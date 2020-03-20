@@ -2,14 +2,14 @@ var http = require('http'); // 1 - Import Node.js core module
 var express = require('express');
 
 var app = express()
-app.use(express.static('Assets'))
+app.use(express.static('Assets'));
 app.get('/', function(req , res){
-    console.log('conecctionmade')
+    console.log('connection nmade')
     res.sendFile(__dirname+'/index.html');
 })
 
 app.get('/subjects', function(req , res){
-    console.log('conecctionmade')
+    console.log('connection made')
     res.sendFile(__dirname+"/subjects.html");
 })
 
@@ -17,7 +17,7 @@ app.get('/subjects', function(req , res){
 
 
 
-var server = app.listen(5000,function(){console.log('connectionmade')})
+var server = app.listen(5000,function(){console.log('connection made')})
 
 
 //testing
