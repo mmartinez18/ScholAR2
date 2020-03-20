@@ -2,7 +2,9 @@
 <html>
 
 <body>
-    <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+   <div class="header" id="testHeader">
+        <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+   </div>
 
     <hr size="5" noshade>
 
@@ -112,7 +114,22 @@
                     </div>
 
                 </div>
+><script>
+    window.onscroll = function() {scrollFunction()};
+    
+    var header = document.getElementById("testHeader");
+    var sticky = header.offsetTop;
 
+    function scrollFunction(){
+        if (window.pageYOffset > sticky){
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+
+</script>
 </body>
 
 </html>
