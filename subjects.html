@@ -2,10 +2,24 @@
 
 <html>
 <body> 
-  <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
-
+  <div class="header" id="testHeader">
+    <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+</div>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  var header = document.getElementById("testHeader");
+  var sticky = header.offsetTop;
+  function scrollFunction(){
+      if (window.pageYOffset > sticky){
+          header.classList.add("sticky");
+      } else {
+          header.classList.remove("sticky");
+      }
+  }
+</script>
   <hr size="5" noshade>
   <script src="three.min.js"></script>
+  <script src="OBJLoader.js"></script>
 
     <!-- Tab links -->
     <div class="tab">
@@ -102,31 +116,46 @@
 
 <!-- Three.js -->
 <script>    
+
   var camera, scene, renderer;
+  var myObj;
   var geometry, material, mesh;
   
   init();
   animate();
   
   function init() {
-  
-      camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
-      camera.position.z = 1;
-  
+      var loader = new THREE.OBJLoader();
+      camera = new THREE.PerspectiveCamera( 50, 1, .01, 100 );
+      camera.position.z = 10;
+      
       scene = new THREE.Scene();
-  
-      geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-      material = new THREE.MeshNormalMaterial();
+
+      // geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+      // material = new THREE.MeshNormalMaterial();
   
       mesh = new THREE.Mesh( geometry, material );
-      scene.add( mesh );
+      // scene.add( mesh );
+      var ambient = new THREE.AmbientLight( 0x101030 );
+      scene.add( ambient );
+
+      var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+      directionalLight.position.set( 0, 0, 1 );
+      scene.add( directionalLight );
+
+      loader.load( 'models/enthroctye.obj', function ( object ) {
+        //console.log(object);
+        myObj = object;
+        scene.add( myObj );
+        console.log(myObj);
+      });
+      //console.log(myObj);
 
       var container = document.getElementById("3dModel");
       var positionInfo = container.getBoundingClientRect();
       var height = positionInfo.height;
       var width = positionInfo.width;
       renderer = new THREE.WebGLRenderer( { antialias: true } );
-      console.log(width);
       renderer.setSize( width, height );
       
      container.appendChild( renderer.domElement );
@@ -135,10 +164,7 @@
   function animate() {
   
       requestAnimationFrame( animate );
-  
-      mesh.rotation.x += 0.01;
-      mesh.rotation.y += 0.02;
-  
+      if ( myObj ) myObj.rotation.y -= 0.009;
       renderer.render( scene, camera );
   
   }
