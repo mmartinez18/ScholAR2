@@ -3,14 +3,20 @@ var express = require('express');
 
 var app = express()
 app.use(express.static('Assets'));
+
 app.get('/', function(req , res){
-    console.log('connection nmade')
+    console.log('connection made')
     res.sendFile(__dirname+'/index.html');
 })
 
 app.get('/subjects', function(req , res){
     console.log('connection made')
     res.sendFile(__dirname+"/subjects.html");
+})
+
+app.get('/ar', function(req , res){
+    console.log('connection made')
+    res.sendFile(__dirname+"/ar.html");
 })
 
     //handle incomming requests here..

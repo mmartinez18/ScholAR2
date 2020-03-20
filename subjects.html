@@ -2,47 +2,14 @@
 
 <html>
 <body> 
-  <!-- <script src="https://unpkg.com/three/build/three.min.js"></script> -->
+  <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+
+  <hr size="5" noshade>
   <script src="three.min.js"></script>
-  <script>    
-    var camera, scene, renderer;
-    var geometry, material, mesh;
-    
-    init();
-    animate();
-    
-    function init() {
-    
-        camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
-        camera.position.z = 1;
-    
-        scene = new THREE.Scene();
-    
-        geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-        material = new THREE.MeshNormalMaterial();
-    
-        mesh = new THREE.Mesh( geometry, material );
-        scene.add( mesh );
-    
-        renderer = new THREE.WebGLRenderer( { antialias: true } );
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        document.body.appendChild( renderer.domElement );
-    
-    }
-    
-    function animate() {
-    
-        requestAnimationFrame( animate );
-    
-        mesh.rotation.x += 0.01;
-        mesh.rotation.y += 0.02;
-    
-        renderer.render( scene, camera );
-    
-    }</script>
+
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Biology')">Biology</button>
+        <button class="tablinks" onclick="openCity(event, 'Biology')" id="defaultOpen" >Biology</button>
         <button class="tablinks" onclick="openCity(event, 'Art')">Art</button>
         <button class="tablinks" onclick="openCity(event, 'Anatomy')">Anatomy</button>
         <button class="tablinks" onclick="openCity(event, 'Chemistry')">Chemistry</button>
@@ -55,9 +22,15 @@
       <div id="Biology" class="tabcontent">
         <h1>Biology</h1>
         <p>Biology The word Biology is derived from the Greek words “Bios” meaning Life, and “Logos” meaning Study.</p>
-        <p>
-          <img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-        </p>
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas</p>
+          <a onclick="location.href='ar';" href="#">
+            <div id = "3dModel" style="float:right;width:600px;height:600px;"></div>
+          </a>
+        </div>
+        <div style="width: 1000px;height: 1000px;">
+       </div>
+        <!-- Might run into a problem trying to display more than one 3d Model at same time -->
       </div>
       
       <div id="Art" class="tabcontent">
@@ -101,7 +74,8 @@
           <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
                                </p>
       </div>
-        
+
+      <!-- For tabs -->
       <script>
         function openCity(evt, School) {
           var i, tabcontent, tablinks;
@@ -116,7 +90,56 @@
           document.getElementById(School).style.display = "block";
           evt.currentTarget.className += " active";
         }
+        document.getElementById("defaultOpen").click();
         </script>
+
+<!-- Three.js -->
+<script>    
+  var camera, scene, renderer;
+  var geometry, material, mesh;
+  
+  init();
+  animate();
+  
+  function init() {
+  
+      camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+      camera.position.z = 1;
+  
+      scene = new THREE.Scene();
+  
+      geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+      material = new THREE.MeshNormalMaterial();
+  
+      mesh = new THREE.Mesh( geometry, material );
+      scene.add( mesh );
+
+      var container = document.getElementById("3dModel");
+      var positionInfo = container.getBoundingClientRect();
+      var height = positionInfo.height;
+      var width = positionInfo.width;
+      renderer = new THREE.WebGLRenderer( { antialias: true } );
+      console.log(width);
+      renderer.setSize( width, height );
+      
+     container.appendChild( renderer.domElement );
+  }
+  
+  function animate() {
+  
+      requestAnimationFrame( animate );
+  
+      mesh.rotation.x += 0.01;
+      mesh.rotation.y += 0.02;
+  
+      renderer.render( scene, camera );
+  
+  }
+  console.log(renderer);
+  console.log(domElement);
+  </script>
+
+
 
 </body>
 
