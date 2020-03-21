@@ -1,74 +1,94 @@
+/* Need to organize CSS to group with same ID's/elements */
+
 html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  .row{
-    display:flex;
-  }
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+.row {
+  display: inline-flex;
+}
+.column {
+  float: left;
+  width: 25.4%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
   .column {
-    float: left;
-    width: 25.4%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
       width: 100%;
       display: block;
-    }
   }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
+}
 
-  .header{
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
-  }
-  .content{
-    padding: 16px;
-  }
-  .sticky{
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  .sticky + .content{
-    padding-top: 120px
-  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 120px;
+}
+
+#content {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+}
+
+div#advantages{
+  padding: 5%;
+}
+
+div.team{
+  margin-top: 130px;
+}
+
+#example_gif{
+  float:right;
+}
