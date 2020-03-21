@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
-    <script src="js\aframe.min.js"></script>
-    <script src="js\three.min.js"></script>
-    <script src="js\AR.js\aframe\build\aframe-ar.js"></script>
-  
-
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-        <a-marker preset="hiro">
-            <a-entity
-            position="0 -1 0"
-            scale="0.05 0.05 0.05"
-            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-            ></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+   <script src="js\aframe.min.js"></script>
+   <!-- <script src="js\three.min.js"></script> -->
+   <script src="js\AR.js\aframe\build\aframe-ar.js"></script>
+   <body style='margin : 0px; overflow: hidden;'>
+      <a-scene embedded arjs='sourceType: webcam;'>
+         <a-assets>
+            <a-asset-item id="airplane_asset_obj" src="https://raw.githubusercontent.com/prashant-andani/AR-Alphabets-words/master/assets/airplane/FREOBJ.obj"></a-asset-item>
+            <a-asset-item id="enthroctye_obj" src ="models\enthroctye.obj"></a-asset-item>
+         </a-assets>
+         <a-marker preset='hiro'>
+            <a-entity obj-model="obj: #enthroctye_obj;"></a-entity>
+            <!-- <a-entity obj-model="obj: #airplane_asset_obj;"></a-entity> -->
+         </a-marker>
+         <a-entity camera></a-entity>
+      </a-scene>
+   </body>
 </html>
