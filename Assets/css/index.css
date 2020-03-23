@@ -1,26 +1,70 @@
 /* Need to organize CSS to group with same ID's/elements */
 
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+#content {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+}
+
+div#advantages{
+  padding-top: 55px;
+  overflow: auto;
+}
+
+#example_gif{
+  float:right;
+  max-width: 100%;
+  width: 800px;
+  /* max-height: 600px; */
+  height: 100%;
+}
+
+/*------------- CSS for cards -------------*/
+
+.profile_picture{
+  width:100%
+}
+
 html {
   box-sizing: border-box;
 }
-*,
-*:after,
-*:before {
+
+*, *:before, *:after {
   box-sizing: inherit;
 }
-.row {
-  display: inline-flex;
-}
+
 .column {
   float: left;
-  width: 25.4%;
+  max-width: 100%;
+  /* width:250px; */
   margin-bottom: 16px;
   padding: 0 8px;
+  display: inline-flex;
 }
-@media screen and (max-width: 650px) {
+
+.row{
+  display: flex;
+}
+
+
+@media screen and (max-width:1400px){
+  #example_gif{
+    float: none;
+    max-width: 100%;
+  }
   .column {
-      width: 100%;
-      display: block;
+    /* width: 25%; */
+    display: block;
+  }
+
+  .row{
+    display: flow-root;
   }
 }
 
@@ -32,8 +76,7 @@ html {
   padding: 0 16px;
 }
 
-.container::after,
-.row::after {
+.container::after, .row::after {
   content: "";
   clear: both;
   display: table;
@@ -54,18 +97,18 @@ html {
   cursor: pointer;
   width: 100%;
 }
+
 .button:hover {
   background-color: #555;
 }
 
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+/*-------------End of CSS for cards-------------*/
+#profile_picture{
+  width : 100%;
 }
-.content {
-  padding: 16px;
-}
+
+
+/*-------------Sticky header-------------*/
 .sticky {
   position: fixed;
   top: 0;
@@ -74,21 +117,4 @@ html {
 .sticky + .content {
   padding-top: 120px;
 }
-
-#content {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
-}
-
-div#advantages{
-  padding: 5%;
-}
-
-div.team{
-  margin-top: 130px;
-}
-
-#example_gif{
-  float:right;
-}
+/*-------------End of sticky header-------------*/
