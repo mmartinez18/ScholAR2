@@ -17,7 +17,7 @@
       }
   }
 </script>
-  <hr size="5" noshade>
+  <!-- <hr size="5" noshade> -->
   <script src="js\three.min.js"></script>
   <script src="js\OBJLoader.js"></script>
 
@@ -36,7 +36,6 @@
       <div id="Biology" class="tabcontent">
         <h1>Biology</h1>
         <p>Biology The word Biology is derived from the Greek words “Bios” meaning Life, and “Logos” meaning Study.</p>
-        <div>
         <div style="display:inline-block;">
         <p style="float:left;max-width:1000px;height:600px;width:100%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, 
            eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class 
@@ -46,12 +45,9 @@
            ut semper nulla egestas</p>
           
           <a onclick="location.href='ar?model=enthroctye.obj';" href="#">
-            <div id = "3dModel" style="float:right;width:600px;height:600px;"></div>
-          </div>
+            <div id="model" style="float:right;width:600px;height:600px;max-width: 100%;"></div>
           </a>
-        </div>
-        <div style="width: 1000px;height: 1000px;">
-       </div>
+          </div>
         <!-- Might run into a problem trying to display more than one 3d Model at same time -->
       </div>
       
@@ -152,7 +148,7 @@
       });
       //console.log(myObj);
 
-      var container = document.getElementById("3dModel");
+      var container = document.getElementById("model");
       var positionInfo = container.getBoundingClientRect();
       var height = positionInfo.height;
       var width = positionInfo.width;
