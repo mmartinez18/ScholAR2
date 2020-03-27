@@ -4,6 +4,12 @@
     background-color: #f1f1f1;
   }
   
+p.modelDesc{
+  float:left;
+  width:1000px;
+  max-width:100%;
+}
+
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
@@ -51,9 +57,12 @@
     padding-top: 120px
   }
 
-/* .model{
-  float:right;width:600px;height:600px;
-} */
+#model{
+  float:right;
+  width:600px;
+  height:600px;
+  max-width: 70%;
+}
 
 canvas{
   max-width: 100%;
@@ -61,7 +70,15 @@ canvas{
 }
 
 @media screen and (max-width:1400px){
-  .model{
+  #model{
     width: 100%;
+    float:left;
+  }
+}
+
+@media screen and (max-width:1000px){
+  p.modelDesc{
+    width:100%;
+    border: 10px solid red;
   }
 }

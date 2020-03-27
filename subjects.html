@@ -1,100 +1,105 @@
-<link rel="stylesheet" type="text/css" href="css\subjects.css">
-
+<!DOCTYPE html>
 <html>
-<body> 
-  <div class="header" id="testHeader">
-    <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
-</div>
-<script>
-  window.onscroll = function() {scrollFunction()};
-  var header = document.getElementById("testHeader");
-  var sticky = header.offsetTop;
-  function scrollFunction(){
-      if (window.pageYOffset > sticky){
-          header.classList.add("sticky");
-      } else {
-          header.classList.remove("sticky");
-      }
-  }
-</script>
-  <!-- <hr size="5" noshade> -->
-  <script src="js\three.min.js"></script>
-  <script src="js\OBJLoader.js"></script>
+  <link rel="stylesheet" type="text/css" href="css\subjects.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <div class="header" id="testHeader">
+        <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+    </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+          var header = document.getElementById("testHeader");
+          var sticky = header.offsetTop;
+          function scrollFunction(){
+              if (window.pageYOffset > sticky){
+                  header.classList.add("sticky");
+              } else {
+                  header.classList.remove("sticky");
+              }
+          }
+    </script>
+    <script src="js\three.min.js"></script>
+    <script src="js\OBJLoader.js"></script>
 
     <!-- Tab links -->
+    <div class="content">
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Biology')" id="defaultOpen" >Biology</button>
+        <button class="tablinks" onclick="openCity(event, 'Biology')" id="defaultOpen">Biology</button>
         <button class="tablinks" onclick="openCity(event, 'Art')">Art</button>
         <button class="tablinks" onclick="openCity(event, 'Anatomy')">Anatomy</button>
         <button class="tablinks" onclick="openCity(event, 'Chemistry')">Chemistry</button>
         <button class="tablinks" onclick="openCity(event, 'Civil Engineering')">Civil Engineering</button>
         <button class="tablinks" onclick="openCity(event, 'Math')">Math</button>
         <button class="tablinks" onclick="openCity(event, 'Mechanical Engineering')">Mechanical Engineering</button>
-      </div>
-      
-      <!-- Tab content -->
-      <div id="Biology" class="tabcontent">
+    </div>
+
+    <!-- Tab content -->
+    <div id="Biology" class="tabcontent">
         <h1>Biology</h1>
         <p>Biology The word Biology is derived from the Greek words “Bios” meaning Life, and “Logos” meaning Study.</p>
         <div style="display:inline-block;">
-        <p style="float:left;max-width:1000px;height:600px;width:100%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, 
-           eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class 
-           aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper.
-           Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum,
-           urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus,
-           ut semper nulla egestas</p>
-          
-          <a onclick="location.href='ar?model=enthroctye.obj';" href="#">
-            <div id="model" style="float:right;width:600px;height:600px;max-width: 100%;"></div>
-          </a>
-          </div>
+            <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+            </p>
+            <a onclick="location.href='ar?model=enthroctye.obj';" href="#">
+                <div id="model"></div>
+            </a>
+        </div>
+        <div>
+            <h1>Useful Links:</h1>
+            <ul>
+                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+            </ul>
+        </div>
+
         <!-- Might run into a problem trying to display more than one 3d Model at same time -->
-      </div>
-      
-      <div id="Art" class="tabcontent">
+    </div>
+
+    <div id="Art" class="tabcontent">
         <h1>Art</h1>
         <p>Art is the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.</p>
         <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
         </p>
-      </div>
-      
-      <div id="Anatomy" class="tabcontent">
+    </div>
+
+    <div id="Anatomy" class="tabcontent">
         <h1>Anatomy</h1>
         <p>Anatomy is the branch of science concerned with the bodily structure of humans, animals, and other living organisms, especially as revealed by dissection and the separation of parts.</p>
         <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
         </p>
-      </div>
+    </div>
 
-      <div id="Chemistry" class="tabcontent">
-          <h1>Chemistry</h1>
-          <p>Chemistry is the branch of science that deals with the identification of the substances of which matter is composed; the investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes to form new substances.</p>
-          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-          </p>
-      </div>
+    <div id="Chemistry" class="tabcontent">
+        <h1>Chemistry</h1>
+        <p>Chemistry is the branch of science that deals with the identification of the substances of which matter is composed; the investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes to form new substances.</p>
+        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+    </div>
 
-      <div id="Civil Engineering" class="tabcontent">
-          <h1>Civil Engineering</h1>
-          <p>Civil Engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.</p>
-          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-          </p>
-      </div>
+    <div id="Civil Engineering" class="tabcontent">
+        <h1>Civil Engineering</h1>
+        <p>Civil Engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.</p>
+        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+    </div>
 
-      <div id="Math" class="tabcontent">
-          <h1>Math</h1>
-          <p>Math is the calculation or the conclusion based on the relevant facts and figures.</p>
-          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-          </p>
-      </div>
+    <div id="Math" class="tabcontent">
+        <h1>Math</h1>
+        <p>Math is the calculation or the conclusion based on the relevant facts and figures.</p>
+        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+    </div>
 
-      <div id="Mechanical Engineering" class="tabcontent">
-          <h1>Mechanical Engineering</h1>
-          <p>Mechanical Engineering is the the branch of engineering dealing with the design, construction, and use of machines.</p>
-          <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-                               </p>
-      </div>
-
-      <!-- For tabs -->
-      <script>
+    <div id="Mechanical Engineering" class="tabcontent">
+        <h1>Mechanical Engineering</h1>
+        <p>Mechanical Engineering is the the branch of engineering dealing with the design, construction, and use of machines.</p>
+        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+        </p>
+    </div>
+  </div>
+    <!-- For tabs -->
+    <script>
         function openCity(evt, School) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
@@ -105,67 +110,66 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(School).style.display = "block";
+          document.getElementById(School).style.display = "grid";
           evt.currentTarget.className += " active";
         }
         document.getElementById("defaultOpen").click();
-      </script>
+    </script>
 
-<!-- Three.js -->
-<script>    
-
-  var camera, scene, renderer;
-  var myObj;
-  var geometry, material, mesh;
-  
-  init();
-  animate();
-  
-  function init() {
-      var loader = new THREE.OBJLoader();
-      camera = new THREE.PerspectiveCamera( 50, 1, .01, 100 );
-      camera.position.z = 10;
-      
-      scene = new THREE.Scene();
-
-      // geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-      // material = new THREE.MeshNormalMaterial();
-  
-      mesh = new THREE.Mesh( geometry, material );
-      // scene.add( mesh );
-      var ambient = new THREE.AmbientLight( 0x101030 );
-      scene.add( ambient );
-
-      var directionalLight = new THREE.DirectionalLight( 0xffeedd );
-      directionalLight.position.set( 0, 0, 1 );
-      scene.add( directionalLight );
-
-      loader.load( 'models/enthroctye.obj', function ( object ) {
-        //console.log(object);
-        myObj = object;
-        scene.add( myObj );
-        console.log(myObj);
-      });
-      //console.log(myObj);
-
-      var container = document.getElementById("model");
-      var positionInfo = container.getBoundingClientRect();
-      var height = positionInfo.height;
-      var width = positionInfo.width;
-      renderer = new THREE.WebGLRenderer( { antialias: true } );
-      renderer.setSize( width, height );
-      
-     container.appendChild( renderer.domElement );
-  }
-  
-  function animate() {
-  
-      requestAnimationFrame( animate );
-      if ( myObj ) myObj.rotation.y -= 0.009;
-      renderer.render( scene, camera );
-  
-  }
-  </script>
+    <!-- Three.js -->
+    <script>
+        var camera, scene, renderer;
+          var myObj;
+          var geometry, material, mesh;
+          
+          init();
+          animate();
+          
+          function init() {
+              var loader = new THREE.OBJLoader();
+              camera = new THREE.PerspectiveCamera( 50, 1, .01, 100 );
+              camera.position.z = 10;
+              
+              scene = new THREE.Scene();
+        
+              // geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+              // material = new THREE.MeshNormalMaterial();
+          
+              mesh = new THREE.Mesh( geometry, material );
+              // scene.add( mesh );
+              var ambient = new THREE.AmbientLight( 0x101030 );
+              scene.add( ambient );
+        
+              var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+              directionalLight.position.set( 0, 0, 1 );
+              scene.add( directionalLight );
+        
+              loader.load( 'models/enthroctye.obj', function ( object ) {
+                //console.log(object);
+                myObj = object;
+                scene.add( myObj );
+                console.log(myObj);
+              });
+              //console.log(myObj);
+        
+              var container = document.getElementById("model");
+              var positionInfo = container.getBoundingClientRect();
+              var height = positionInfo.height;
+              var width = 600;
+              renderer = new THREE.WebGLRenderer( { antialias: true } );
+              renderer.setSize( width, height );
+              console.log(width);
+             container.appendChild( renderer.domElement );
+          }
+          
+          function animate() {
+          
+              requestAnimationFrame( animate );
+              if ( myObj ) myObj.rotation.y -= 0.009;
+              renderer.render( scene, camera );
+          
+          }
+    </script>
 </body>
 
 </html>
