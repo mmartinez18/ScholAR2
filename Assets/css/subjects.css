@@ -39,9 +39,9 @@ p.modelDesc{
     border-top: none;
   }
 
-  .header{
+  .header {
     padding: 10px 16px;
-    background: #555;
+    background: #007cc7;
     color: #f1f1f1;
   }
   .content{
@@ -79,6 +79,11 @@ canvas{
 @media screen and (max-width:1000px){
   p.modelDesc{
     width:100%;
-    border: 10px solid red;
+    /* border: 10px solid red; */
   }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }

@@ -6,23 +6,11 @@
     <div class="header" id="testHeader">
         <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
     </div>
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        var header = document.getElementById("testHeader");
-        var sticky = header.offsetTop;
-        function scrollFunction(){
-            if (window.pageYOffset > sticky){
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-    </script>
 
     <div id="content">
-        <button onclick="location.href='subjects';" type="button">Explore 3D Models</button>
-
-        <h1>What is Scholar?</h1>
+       
+        <section>
+        <h1>What is ScholAR?</h1>
 
             <div id="description">
                 <p>Our organization ScholAR is a website that will provide users with the ability to explore 3D digital model of their desired subjects in Augmented Reality</p>
@@ -30,6 +18,7 @@
                 <p>A more enjoyable time exploring , keeping your attention AR is the way to make books more interactive</p>
                 <p>Fun and knowledge a great combinacion, our website will provide both</p>
             </div>
+        </section>
 
             
 
@@ -45,12 +34,14 @@
                     <li>Enhance your knowledge</li>
                     <li>No age or level education bounds to your research</li>
                 </ul>
+                 <button class="myButton" onclick="location.href='subjects';" type="button">Explore 3D Models</button>
             </div>
 
 
             <div>
                 <br>
                 <h1>About The Team</h1>
+                <hr>
                 <br>
             </div>
 
@@ -137,5 +128,17 @@
                 </div>
 
         </body>
-
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            var header = document.getElementById("testHeader");
+            var sticky = header.offsetTop;
+            function scrollFunction(){
+                if (window.pageYOffset > sticky){
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
 </html>

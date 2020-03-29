@@ -2,7 +2,7 @@
 
 .header {
   padding: 10px 16px;
-  background: #555;
+  background: #007cc7;
   color: #f1f1f1;
 }
 
@@ -113,8 +113,49 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0px 0px 20px 5px #00000094;
 }
 .sticky + .content {
   padding-top: 120px;
 }
 /*-------------End of sticky header-------------*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.myButton {
+	box-shadow: 0px 0px 0px 2px #16a7fb;
+	background-color:#16a7fb;
+	border-radius:10px;
+	border:1px solid #16a7fb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+  margin:50px;
+}
+.myButton:hover {
+	background-color:#097fc4;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1.8px;
+  border-color: black;
+}
+        
