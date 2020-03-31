@@ -118,6 +118,31 @@ html {
 .sticky + .content {
   padding-top: 120px;
 }
+.navBar{
+  display: inline-flex;
+  float:right;
+}
+
+#navWrapper{
+  list-style-type: none;
+  color: #999;
+}
+
+#navWrapper > li > a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+li.navItem{
+  display:inline;
+  margin: 25px;
+}
+
+@media screen and (max-width: 680px){
+  #navWrapper{
+    display:none;
+  }
+}
 /*-------------End of sticky header-------------*/
 
 body {

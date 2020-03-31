@@ -47,15 +47,39 @@ p.modelDesc{
   .content{
     padding: 16px;
   }
-  .sticky{
+  .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0px 0px 20px 5px #00000094;
   }
-
-  .sticky + .content{
-    padding-top: 120px
+  .sticky + .content {
+    padding-top: 120px;
+  }
+  .navBar{
+    display: inline-flex;
+    float:right;
+  }
+  
+  #navWrapper{
+    list-style-type: none;
+    color: #999;
+  }
+  
+  #navWrapper > li > a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  li.navItem{
+    display:inline;
+    margin: 25px;
+  }
+  
+  @media screen and (max-width: 680px){
+    #navWrapper{
+      display:none;
+    }
   }
 
 #model{
