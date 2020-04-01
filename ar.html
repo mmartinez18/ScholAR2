@@ -8,12 +8,36 @@
          <a-assets>
             <a-asset-item id="airplane_asset_obj" src="https://raw.githubusercontent.com/prashant-andani/AR-Alphabets-words/master/assets/airplane/FREOBJ.obj"></a-asset-item>
             <a-asset-item id="enthroctye_obj" src ="models\enthroctye.obj"></a-asset-item>
+            <a-asset-item id="the_thinker_obj" src ="models\the_thinker.obj"></a-asset-item>
          </a-assets>
-         <a-marker preset='hiro'>
+         <a-marker preset='hiro' id="marker">
             <a-entity obj-model="obj: #enthroctye_obj;"></a-entity>
             <!-- <a-entity obj-model="obj: #airplane_asset_obj;"></a-entity> -->
          </a-marker>
          <a-entity camera></a-entity>
       </a-scene>
    </body>
+
+   <script>
+      var url = window.location.href;
+      var modelName = url.slice(url.indexOf("=")+1,url.length);
+      var entity = document.createElement("a-entity");
+      var marker = document.getElementById("marker");
+      var att = document.createAttribute("obj-model");
+
+      att.value = "obj: #"+modelName+";";
+      entity.setAttributeNode(att);
+
+      
+      switch(modelName){
+         case "enthroctye_obj": 
+         case "the_thinker_obj":
+            marker.appendChild(entity);
+            break;
+         // Rudimentary input validation
+         default:
+            window.alert("Something went wrong. Please contact ScholAR customer service");
+      }
+
+   </script>
 </html>
