@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" type="text/css" href="css\subjects.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css\subjects.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body>
-  <canvas id ="c"></canvas>
-  <nav class="header" id="testHeader">
-    <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
-    <div class= "navBar">
-      <ul id="navWrapper">
-        <li class = "navItem"><a href ="#">ABOUT</a></li> |
-        <li class = "navItem"><a href = "#">CONTACT</a></li> |
-        <li class = "navItem"><a href = "#">CAREERS</a></li>
-      </ul>
-    </div>
-  </nav>
+    <canvas id="c"></canvas>
+    <nav class="header" id="testHeader">
+        <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+        <div class="navBar">
+            <ul id="navWrapper">
+                <li class="navItem"><a href="#">ABOUT</a></li> |
+                <li class="navItem"><a href="#">CONTACT</a></li> |
+                <li class="navItem"><a href="#">CAREERS</a></li>
+            </ul>
+        </div>
+    </nav>
     <script>
         window.onscroll = function() {scrollFunction()};
           var header = document.getElementById("testHeader");
@@ -30,303 +31,466 @@
     <script src="js\OBJLoader.js"></script>
 
     <!-- Tab links -->
- 
-    <div class="content">
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Biology')" id="defaultOpen">Biology</button>
-        <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
-        <button class="tablinks" onclick="openTab(event, 'Anatomy')">Anatomy</button>
-        <button class="tablinks" onclick="openTab(event, 'Chemistry')">Chemistry</button>
-        <button class="tablinks" onclick="openTab(event, 'Civil Engineering')">Civil Engineering</button>
-        <button class="tablinks" onclick="openTab(event, 'Math')">Math</button>
-        <button class="tablinks" onclick="openTab(event, 'Mechanical Engineering')">Mechanical Engineering</button>
-    </div>
 
-    <!-- Tab content -->
-    <div id="Biology" class="tabcontent">
-        <article style="display:inline">
-        <h1>Biology</h1>
-        <p>Biology The word Biology is derived from the Greek words “Bios” meaning Life, and “Logos” meaning Study.</p>
-        <div style="display:inline-block;">
-            <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, 
-                eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti 
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus
-                vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit
-                elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, 
-                eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti 
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus
-                vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit
-                elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
-                <br>
-            </p>
-            <h1>Useful Links:</h1>
-            <ul>
-                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
-                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
-                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
-            </ul>
-            </div>
-            <a onclick="location.href='ar?model=enthroctye_obj';" href="#" >
-                <div id="model"></div>
-            </a>
-        </article>
+    <div class="content">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Biology')" id="defaultOpen">Biology</button>
+            <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
+            <button class="tablinks" onclick="openTab(event, 'Anatomy')">Anatomy</button>
+            <button class="tablinks" onclick="openTab(event, 'Chemistry')">Chemistry</button>
+            <button class="tablinks" onclick="openTab(event, 'Civil Engineering')">Civil Engineering</button>
+            <button class="tablinks" onclick="openTab(event, 'Math')">Math</button>
+            <button class="tablinks" onclick="openTab(event, 'Mechanical Engineering')">Mechanical Engineering</button>
         </div>
 
-    <div id="Art" class="tabcontent">
-      <article style="display:inline">
-        <h1>Art</h1>
-        <p>Art is the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture,
-           producing works to be appreciated primarily for their beauty or emotional power.
-        </p>
-        <div style="display:inline-block;">
-            <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, 
-                eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti 
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus
-                vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit
-                elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+        <!-- Tab content -->
+        <div id="Biology" class="tabcontent">
+            <article style="display:inline">
+                <h1>Biology</h1>
+                <p>Biology The word Biology is derived from the Greek words “Bios” meaning Life, and “Logos” meaning Study.</p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://medical-dictionary.thefreedictionary.com/erythrocyte</li>
+                        <li>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/erythrocyte</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=enthroctye_obj';" href="#">
+                    <div id="model"></div>
+                </a>
+            </article>
+        </div>
+
+        <div id="Art" class="tabcontent">
+            <article style="display:inline">
+                <h1>Art</h1>
+                <p>Art is the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.
+                </p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/The_Thinker</li>
+                        <li>https://www.britannica.com/topic/The-Thinker-sculpture-by-Rodin</li>
+                        <li>https://www.clevelandart.org/research/conservation/rodins-thinker</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=the_thinker_obj';" href="#">
+                    <div id="model2"></div>
+                </a>
+            </article>
+        </div>
+
+        <div id="Anatomy" class="tabcontent">
+            <article style="display:inline">
+                <h1>Anatomy</h1>
+                <p>Anatomy is the branch of science concerned with the bodily structure of humans, animals, and other living organisms, especially as revealed by 
+                  dissection and the separation of parts.</p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/The_Thinker</li>
+                        <li>https://www.britannica.com/topic/The-Thinker-sculpture-by-Rodin</li>
+                        <li>https://www.clevelandart.org/research/conservation/rodins-thinker</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=male_obj';" href="#">
+                    <div id="model3"></div>
+                </a>
+            </article>
+        </div>
+
+        <div id="Chemistry" class="tabcontent">
+            <article style="display:inline">
+                <h1>Chemistry</h1>
+                <p>Chemistry is the branch of science that deals with the identification of the substances of which matter is composed; the 
+                  investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes 
+                  to form new substances.</p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=the_thinker_obj';" href="#">
+                    <div id="model4"></div>
+                </a>
+            </article>
+        </div>
+        <div id="Civil Engineering" class="tabcontent">
+            <article style="display:inline">
+                <h1>Civil Engineering</h1>
+                <p>Civil Engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.
+                </p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=building_obj';" href="#">
+                    <div id="model5"></div>
+                </a>
+            </article>
+        </div>
+
+        <div id="Math" class="tabcontent">
+            <article style="display:inline">
+                <h1>Math</h1>
+                <p>Math is the calculation or the conclusion based on the relevant facts and figures.</p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=mobiousBand_obj';" href="#">
+                    <div id="model6"></div>
+                </a>
+            </article>
+        </div>
+
+        <div id="Mechanical Engineering" class="tabcontent">
+            <article style="display:inline">
+                <h1>Mechanical Engineering</h1>
+                <p>Mechanical Engineering is the the branch of engineering dealing with the design, construction, and use of machines.</p>
+                <div style="display:inline-block;">
+                    <p class="modelDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
+                        <br>
+                    </p>
+                    <h1>Useful Links:</h1>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                        <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
+                    </ul>
+                </div>
+                <a onclick="location.href='ar?model=engine_obj';" href="#">
+                    <div id="model7"></div>
+                </a>
+            </article>
+        </div>
+
+        <!-- For tabs -->
+        <script>
+            function openTab(evt, School) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(School).style.display = "grid";
+              evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+        </script>
+
+        <!-- Three.js -->
+
+        <script>
+              var camera;
+              var scene_bio, renderer_bio, myObj_bio;
+              var scene_art,renderer_art ,myObj_art;
+              var scene_anatomy,renderer_anatomy ,myObj_anatomy;
+              var scene_chem,renderer_chem ,myObj_chem;
+              var scene_civil,renderer_civil ,myObj_civil;
+              var scene_math,renderer_math ,myObj_math;
+              var scene_mech,renderer_mech ,myObj_mech;
+
+              init();
+              animate();
+              
+              function init() {
+                  var loader = new THREE.OBJLoader();
+
+                  //Biology
+                  var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight.position.set( 0, 0, 1 );
+                  var ambient = new THREE.AmbientLight( 0x101030 );
+                  camera = new THREE.PerspectiveCamera( 50, 1, .01, 100 );
+                  camera.position.z = 10;
+                  
+                  scene_bio = new THREE.Scene();
+                  scene_bio.add( ambient );
+                  scene_bio.add( directionalLight );
+            
+                  //Art
+                  var ambient2 = new THREE.AmbientLight( 0x101030 );
+                  var directionalLight2 = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight2.position.set( 0, 0, 1 );
+                  scene_art = new THREE.Scene();
+                  
+                  scene_art.add( ambient2 );
+                  scene_art.add( directionalLight2 );
+      
+                  //Anatomy
+                  var ambient3 = new THREE.AmbientLight( 0x101030 );
+                  var directionalLight3 = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight3.position.set( 0, 0, 1 );
+                  scene_anatomy = new THREE.Scene();
+                  
+                  scene_anatomy.add( ambient3 );
+                  scene_anatomy.add( directionalLight3 );
+
+                  //Chemistry
+                  var ambient4 = new THREE.AmbientLight( 0x101030 );
+                  var directionalLight4 = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight4.position.set( 0, 0, 1 );
+                  scene_chem = new THREE.Scene();
+                  
+                  scene_chem.add( ambient4 );
+                  scene_chem.add( directionalLight4 );
+
+                  //Civil
+                  var ambient5 = new THREE.AmbientLight( 0x101030 );
+                  var directionalLight5 = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight5.position.set( 0, 0, 1 );
+                  scene_civil = new THREE.Scene();
+                  
+                  scene_civil.add( ambient5 );
+                  scene_civil.add( directionalLight5 );
+
+                  //Math
+                  var ambient6 = new THREE.AmbientLight( 0x101030 );
+                  var directionalLight6 = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight6.position.set( 0, 0, 1 );
+                  scene_math = new THREE.Scene();
+                  
+                  scene_math.add( ambient6 );
+                  scene_math.add( directionalLight6 );
+                  
+                  //Mech
+                  var ambient7 = new THREE.AmbientLight( 0x101030 );
+                  var directionalLight7 = new THREE.DirectionalLight( 0xffeedd );
+                  directionalLight7.position.set( 0, 0, 1 );
+                  scene_mech = new THREE.Scene();
+                  
+                  scene_mech.add( ambient7 );
+                  scene_mech.add( directionalLight7 );
+
+                
+                  //Loading 3D Objects
+                  loader.load( 'models/enthroctye.obj', function ( object ) {
+                    myObj_bio = object;
+                    scene_bio.add( myObj_bio);
+                  });
+                  
+                  loader.load( 'models/the_thinker.obj', function ( object ) {
+                    myObj_art = object;
+                    scene_art.add( myObj_art );
+                  });
+
+                  loader.load( 'models/male.obj', function ( object ) {
+                    myObj_anatomy = object;
+                    scene_anatomy.add( myObj_anatomy );
+                  });
+
+                  loader.load( 'models/caffine.obj', function ( object ) {
+                    myObj_chem = object;
+                    scene_chem.add( myObj_chem );
+                  });
+                  
+                  loader.load( 'models/building.obj', function ( object ) {
+                    myObj_civil = object;
+                    scene_civil.add( myObj_civil );
+                  });
+
+                  loader.load( 'models/mobiousBand.obj', function ( object ) {
+                    myObj_math = object;
+                    scene_math.add( myObj_math );
+                  });
+            
+                  loader.load( 'models/engine.obj', function ( object ) {
+                    myObj_mech = object;
+                    scene_mech.add( myObj_mech );
+                  });
+
+                  //Getting containers
+                  
+                  //Biology
+                  var container = document.getElementById("model");
+                  var positionInfo = container.getBoundingClientRect();
+                  var height = positionInfo.height;
+                  var width = 600;
+                  renderer_bio = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_bio.setSize( width, height );
+                  container.appendChild( renderer_bio.domElement );
+                  
+                  //Art
+                  var container2 = document.getElementById("model2");
+                  renderer_art = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_art.setSize( width, height );
+                  container2.appendChild( renderer_art.domElement );
+
+                  //Anatomy
+                  var container3 = document.getElementById("model3");
+                  renderer_anatomy = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_anatomy.setSize( width, height );
+                  container3.appendChild(renderer_anatomy.domElement );
+
+                  //Chemistry
+                  var container4 = document.getElementById("model4");
+                  renderer_chem = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_chem.setSize( width, height );
+                  container4.appendChild(renderer_chem.domElement );
+
+                  //Civil
+                  var container5 = document.getElementById("model5");
+                  renderer_civil = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_civil.setSize( width, height );
+                  container5.appendChild(renderer_civil.domElement );
+
+                  //Math
+                  var container6 = document.getElementById("model6");
+                  renderer_math = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_math .setSize( width, height );
+                  container6.appendChild(renderer_math.domElement );
+
+                  //Mech
+                  var container7 = document.getElementById("model7");
+                  renderer_mech = new THREE.WebGLRenderer( { antialias: true } );
+                  renderer_mech .setSize( width, height );
+                  container7.appendChild(renderer_mech.domElement );
+    
+              }
+              
+              function animate() {
+                  requestAnimationFrame( animate );
+                  if ( myObj_bio ) myObj_bio.rotation.y -= 0.009;
+                  renderer_bio.render( scene_bio, camera );
+                  if ( myObj_art ) myObj_art.rotation.y -= 0.009;
+                  renderer_art.render(scene_art,camera);
+                  if ( myObj_anatomy ) myObj_anatomy.rotation.y -= 0.009;
+                  renderer_anatomy.render(scene_anatomy,camera);
+                  if ( myObj_chem ) {myObj_chem.rotation.y -= 0.009;}
+                  renderer_chem.render(scene_chem,camera);
+                  if ( myObj_civil ) myObj_civil.rotation.y -= 0.009;
+                  renderer_civil.render(scene_civil,camera);
+                  if ( myObj_math ) myObj_math.rotation.y -= 0.009;
+                  renderer_math.render(scene_math,camera);
+                  if ( myObj_mech ) myObj_mech.rotation.y -= 0.009;
+                  renderer_mech.render(scene_mech,camera);
+              }
+        </script>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__addr">
+                <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+
+                <h2>Contact</h2>
+                <a href="#" style="color: #999;">Customer Support</a>
                 <br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, elit at fermentum tristique, sem nunc hendrerit massa, 
-                eget tincidunt nibh quam tincidunt risus. Praesent varius vel nisi ut aliquam. In scelerisque sem vitae cursus dapibus. Class aptent taciti 
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque auctor sit amet tellus vel semper. Aenean nisi enim, finibus
-                vel pretium sed, molestie sed eros. Aliquam erat volutpat. Sed blandit, lorem quis vulputate fermentum, urna odio tincidunt massa, at hendrerit
-                elit libero at ligula. Duis lobortis et felis dapibus vehicula. Sed maximus tortor vitae quam maximus, ut semper nulla egestas
-                <br>
-            </p>
-            <h1>Useful Links:</h1>
-            <ul>
-                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
-                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
-                <li>https://en.wikipedia.org/wiki/Red_blood_cell</li>
-            </ul>
-            </div>
-            <a onclick="location.href='ar?model=the_thinker_obj';" href="#" >
-                <div id="model2"></div>
-            </a>
-        </article>
-    </div>
-
-
-    <div id="Anatomy" class="tabcontent">
-        <h1>Anatomy</h1>
-        <p>Anatomy is the branch of science concerned with the bodily structure of humans, animals, and other living organisms, especially as revealed by dissection and the separation of parts.</p>
-        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-        </p>
-    </div>
-
-    <div id="Chemistry" class="tabcontent">
-        <h1>Chemistry</h1>
-        <p>Chemistry is the branch of science that deals with the identification of the substances of which matter is composed; the investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes to form new substances.</p>
-        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-        </p>
-    </div>
-
-    <div id="Civil Engineering" class="tabcontent">
-        <h1>Civil Engineering</h1>
-        <p>Civil Engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.</p>
-        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-        </p>
-    </div>
-
-    <div id="Math" class="tabcontent">
-        <h1>Math</h1>
-        <p>Math is the calculation or the conclusion based on the relevant facts and figures.</p>
-        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-        </p>
-    </div>
-
-    <div id="Mechanical Engineering" class="tabcontent">
-        <h1>Mechanical Engineering</h1>
-        <p>Mechanical Engineering is the the branch of engineering dealing with the design, construction, and use of machines.</p>
-        <p><img Src="Programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
-        </p>
-    </div>
-  </div>
-    <!-- For tabs -->
-    <script>
-        function openTab(evt, School) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(School).style.display = "grid";
-          evt.currentTarget.className += " active";
-        }
-        document.getElementById("defaultOpen").click();
-    </script>
-
-    <!-- Three.js -->
-
-    <!-- Need to change to getElementsbyClass -->
-    <!-- Can just fake it -->
-    <script>
-          var camera, scene, renderer;
-          var scene2,renderer2 ,myObj2;
-          var myObj;
-          var geometry, material, mesh;
-          
-          init();
-          animate();
-          
-          function init() {
-              var loader = new THREE.OBJLoader();
-              camera = new THREE.PerspectiveCamera( 50, 1, .01, 100 );
-              camera.position.z = 10;
-              
-              scene = new THREE.Scene();
-        
-              mesh = new THREE.Mesh( geometry, material );
-              // scene.add( mesh );
-              var ambient = new THREE.AmbientLight( 0x101030 );
-              scene.add( ambient );
-        
-              var directionalLight = new THREE.DirectionalLight( 0xffeedd );
-              directionalLight.position.set( 0, 0, 1 );
-              scene.add( directionalLight );
-        
-              scene2 = new THREE.Scene();
-              mesh2 = new THREE.Mesh( geometry, material );
-        // scene.add( mesh );
-        var ambient2 = new THREE.AmbientLight( 0x101030 );
-        scene2.add( ambient2 );
-  
-        var directionalLight2 = new THREE.DirectionalLight( 0xffeedd );
-        directionalLight2.position.set( 0, 0, 1 );
-        scene2.add( directionalLight2 );
-  
-              console.log(scene2);
-
-              loader.load( 'models/enthroctye.obj', function ( object ) {
-                myObj = object;
-                scene.add( myObj );
-                console.log(myObj);
-              });
-              
-              loader.load( 'models/the_thinker.obj', function ( object ) {
-                myObj2 = object;
-                scene2.add( myObj2 );
-                console.log(object);
-              });
-              
-        
-              var container = document.getElementById("model");
-              var positionInfo = container.getBoundingClientRect();
-              var height = positionInfo.height;
-              var width = 600;
-              renderer = new THREE.WebGLRenderer( { antialias: true } );
-              renderer.setSize( width, height );
-              console.log(width);
-              container.appendChild( renderer.domElement );
-
-              var container2 = document.getElementById("model2");
-              var positionInfo2 = container2.getBoundingClientRect();
-              var height2 = positionInfo2.height;
-              var width2 = 600;
-              renderer2 = new THREE.WebGLRenderer( { antialias: true } );
-              renderer2.setSize( width, height );
-              console.log(width);
-              container2.appendChild( renderer2.domElement );
-
-          }
-          
-          function animate() {
-              requestAnimationFrame( animate );
-              if ( myObj ) myObj.rotation.y -= 0.009;
-              renderer.render( scene, camera );
-              if ( myObj2 ) myObj2.rotation.y -= 0.009;
-              renderer2.render(scene2,camera);
-          }
-    </script>
-
-
-
-
-
-
-
-
-
-    <footer class="footer">
-        <div class="footer__addr">
-            <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
-              
-          <h2>Contact</h2>
-          <a href ="#" style ="color: #999;">Customer Support</a>
-          <br>
-          <address>
+                <address>
               <br>
             2641 John F Kennedy Blvd, Jersey City, NJ 07306<br>
             <br>
             <a class="footer__btn" href="mailto:ScholAR@gmail.com">Email Us</a>
           </address>
-        </div>
-        
-        <ul class="footer__nav">
-          <li class="nav__item">
-            <h2 class="nav__title">Media</h2>
-      
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Online</a>
-              </li>
-      
-              <li>
-                <a href="#">Print</a>
-              </li>
-                  
-              <li>
-                <a href="#">Alternative Ads</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav__item nav__item--extra">
-            <h2 class="nav__title">Technology</h2>
-            
-            <ul class="nav__ul nav__ul--extra">
-              <li>
-                <a href="#">Augmented Reality</a>
-              </li>
-              <li>
-                <a href="#">3D Models</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Legal</h2>
-            
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              
-              <li>
-                <a href="#">Terms of Use</a>
-              </li>
-              
-              <li>
-                <a href="#">Sitemap</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        
-        <div class="legal">
-            <p>&copy; 2020 ScholAR. All rights reserved.</p>
-            
-            <div class="legal__links">
-              <span>Made with <span class="heart">♥</span> by Saint Peter's Students</span>
             </div>
-          </div>
-      </footer>
-</body>    
+
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Media</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Online</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Print</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Alternative Ads</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item nav__item--extra">
+                    <h2 class="nav__title">Technology</h2>
+
+                    <ul class="nav__ul nav__ul--extra">
+                        <li>
+                            <a href="#">Augmented Reality</a>
+                        </li>
+                        <li>
+                            <a href="#">3D Models</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Legal</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="legal">
+                <p>&copy; 2020 ScholAR. All rights reserved.</p>
+
+                <div class="legal__links">
+                    <span>Made with <span class="heart">♥</span> by Saint Peter's Students</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of footer -->
+</body>
+
 </html>
