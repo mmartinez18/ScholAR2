@@ -8,12 +8,46 @@
          <a-assets>
             <a-asset-item id="airplane_asset_obj" src="https://raw.githubusercontent.com/prashant-andani/AR-Alphabets-words/master/assets/airplane/FREOBJ.obj"></a-asset-item>
             <a-asset-item id="enthroctye_obj" src ="models\enthroctye.obj"></a-asset-item>
+            <a-asset-item id="building_obj" src ="models\building.obj"></a-asset-item>
+            <a-asset-item id="male_obj" src ="models\male.obj"></a-asset-item>
+            <a-asset-item id="mobiousBand_obj" src ="models\mobiousBand.obj"></a-asset-item>
+            <a-asset-item id="caffine_obj" src ="models\caffine.obj"></a-asset-item>
+            <a-asset-item id="engine_obj" src ="models\engine.obj"></a-asset-item>
+            <a-asset-item id="the_thinker_obj" src ="models\the_thinker.obj"></a-asset-item>
          </a-assets>
-         <a-marker preset='hiro'>
-            <a-entity obj-model="obj: #enthroctye_obj;"></a-entity>
+         <a-marker preset='hiro' id="marker">
+            <!-- <a-entity obj-model="obj: #enthroctye_obj;"></a-entity> -->
             <!-- <a-entity obj-model="obj: #airplane_asset_obj;"></a-entity> -->
          </a-marker>
          <a-entity camera></a-entity>
       </a-scene>
    </body>
+
+   <script>
+      var url = window.location.href;
+      var modelName = url.slice(url.indexOf("=")+1,url.length);
+      var entity = document.createElement("a-entity");
+      var marker = document.getElementById("marker");
+      var att = document.createAttribute("obj-model");
+
+      att.value = "obj: #"+modelName+";";
+      entity.setAttributeNode(att);
+
+      
+      switch(modelName){
+         case "enthroctye_obj": 
+         case "the_thinker_obj":
+         case "building_obj":
+         case "male_obj":
+         case "mobiousBand_obj":
+         case "caffine_obj":
+         case "engine_obj":
+            marker.appendChild(entity);
+            break;
+         // Rudimentary input validation
+         default:
+            window.alert("Something went wrong. Please contact ScholAR customer service");
+      }
+
+   </script>
 </html>
