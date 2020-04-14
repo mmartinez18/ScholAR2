@@ -82,7 +82,7 @@ p.modelDesc{
     }
   }
 
-div[id^="model"]{
+#model{
   float:right;
   width:600px;
   height:600px;
@@ -95,7 +95,7 @@ canvas{
 }
 
 @media screen and (max-width:1400px){
-  div[id^="model"]{
+  #model{
     width: 100%;
     float:left;
   }
@@ -242,16 +242,4 @@ body {
   .footer__nav {
     flex: 2 0px;
   }
-}
-
-
-
-#c{
-  position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    z-index: -1;
 }
