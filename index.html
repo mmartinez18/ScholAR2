@@ -1,25 +1,36 @@
-<link rel="stylesheet" type="text/css" href="css\index.css">
+<!DOCTYPE html>
 <html>
-
+    <link rel="stylesheet" type="text/css" href="css\index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
-   <div class="header" id="testHeader">
-        <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
-   </div>
+  <nav class="header" id="testHeader">
+    <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+    <div class= "navBar">
+      <ul id="navWrapper">
+        <li class = "navItem"><a href ="#">ABOUT</a></li> |
+        <li class = "navItem"><a href = "#">CONTACT</a></li> |
+        <li class = "navItem"><a href = "#">CAREERS</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div id="content">
+       
+        <section>
+        <h1>What is ScholAR?</h1>
 
-    <hr size="5" noshade>
+            <div id="description">
+                <p>Our organization ScholAR is a website that will provide users with the ability to explore 3D digital model of their desired subjects in Augmented Reality</p>
+                <p>Augmented Reality is being used increasingly in education today, bringing a geat impact on the learning experience</p>
+                <p>A more enjoyable time exploring , keeping your attention AR is the way to make books more interactive</p>
+                <p>Fun and knowledge a great combinacion, our website will provide both</p>
+            </div>
+        </section>
 
-    <div style="padding-left: 100px; padding-right: 100px; padding-top: 40px">
-        <button onclick="location.href='subjects';" type="button">Explore 3D Models</button>
+            
 
-        <h1>What is Scholar?</h1>
-
-        <p>
-            <p>Our organization ScholAR is a website that will provide users with the ability to explore 3D digital model of their desired subjects in Augmented Reality</p>
-            <p>Augmented Reality is being used increasingly in education today, bringing a geat impact on the learning experience</p>
-            <p>A more enjoyable time exploring , keeping your attention AR is the way to make books more interactive</p>
-            <p>Fun and knowledge a great combinacion, our website will provide both</p>
-            <p>
-                <img src="programming.gif" alt="Computer man" style="float:right;width:500px;height:100px;">
+            <div id="advantages">
+               <h2>Why Use ScholAR?</h2>
+               <aside> <img id ="example_gif" src="ARcode_on_the_Webpage.gif" alt="Computer man"></aside>
 
                 <ul>
                     <li>A more enjoyable time exploring different subjects</li>
@@ -29,15 +40,22 @@
                     <li>Enhance your knowledge</li>
                     <li>No age or level education bounds to your research</li>
                 </ul>
+                 <button class="myButton" onclick="location.href='subjects';" type="button">Explore 3D Models</button>
+            </div>
 
-            </p>
 
-            <div class="team">
+            <div>
+                <br>
+                <h1>About The Team</h1>
+                <hr>
+                <br>
+            </div>
+
 
                 <div class="row">
                     <div class="column">
                         <div class="card">
-                            <img src="placeholder_profile.png" alt="Samuel" style="width:100%">
+                            <img class ="profile_picture" src="placeholder_profile.png" alt="Samuel" >
                             <div class="container">
                                 <h2>Samuel Ballesteros</h2>
                                 <p class="title">CEO/Art Director</p>
@@ -50,12 +68,12 @@
 
                     <div class="column">
                         <div class="card">
-                            <img src="placeholder_profile.png" alt="Mario" style="width:100%">
+                            <img class ="profile_picture" src="placeholder_profile.png" alt="Mario">
                             <div class="container">
                                 <h2>Mario Antonio Martinez</h2>
                                 <p class="title">Software Engeneer</p>
                                 <p>Bachelor Computer Science Cyber Security.</p>
-                                <p>MMartinez@Sainpeters.eduj</p>
+                                <p>MMartinez@Sainpeters.edu</p>
                                 <p><button class="button">Contact</button></p>
                             </div>
                         </div>
@@ -63,7 +81,7 @@
 
                     <div class="column">
                         <div class="card">
-                            <img src="placeholder_profile.png" alt="Julian" style="width:100%">
+                            <img class ="profile_picture" src="placeholder_profile.png" alt="Julian">
                             <div class="container">
                                 <h2>Julian Mayugba</h2>
                                 <p class="title">Software Engeneer</p>
@@ -76,7 +94,7 @@
 
                     <div class="column">
                         <div class="card">
-                            <img src="placeholder_profile.png" alt="Sundus" style="width:100%">
+                            <img class ="profile_picture" src="placeholder_profile.png" alt="Sundus">
                             <div class="container">
                                 <h2>Sundus Elmosallamy</h2>
                                 <p class="title">Software Engeneer</p>
@@ -89,7 +107,7 @@
 
                     <div class="column">
                         <div class="card">
-                            <img src="placeholder_profile.png" alt="Brandon" style="width:100%">
+                            <img class ="profile_picture" src="placeholder_profile.png" alt="Brandon">
                             <div class="container">
                                 <h2>Brandon Seelall</h2>
                                 <p class="title">Software Engeneer</p>
@@ -102,7 +120,7 @@
 
                     <div class="column">
                         <div class="card">
-                            <img src="placeholder_profile.png" alt="Maicol" style="width:100%">
+                            <img class ="profile_picture" src="placeholder_profile.png" alt="Maicol">
                             <div class="container">
                                 <h2>Maicol Baez</h2>
                                 <p class="title">Software Engeneer</p>
@@ -114,22 +132,92 @@
                     </div>
 
                 </div>
-><script>
-    window.onscroll = function() {scrollFunction()};
-    
-    var header = document.getElementById("testHeader");
-    var sticky = header.offsetTop;
 
-    function scrollFunction(){
-        if (window.pageYOffset > sticky){
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-
-
-</script>
-</body>
-
+        </body>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            var header = document.getElementById("testHeader");
+            var sticky = header.offsetTop;
+            function scrollFunction(){
+                if (window.pageYOffset > sticky){
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        <footer class="footer">
+            <div class="footer__addr">
+                <img src="logo.JPG" alt="Smiley Face" height="65" width="200">
+                  
+              <h2>Contact</h2>
+              <a href ="#" style ="color: #999;">Customer Support</a>
+              <br>
+              <address>
+                  <br>
+                2641 John F Kennedy Blvd, Jersey City, NJ 07306<br>
+                <br>
+                <a class="footer__btn" href="mailto:ScholAR@gmail.com">Email Us</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+                
+                <ul class="nav__ul nav__ul--extra">
+                  <li>
+                    <a href="#">Augmented Reality</a>
+                  </li>
+                  <li>
+                    <a href="#">3D Models</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2020 ScholAR. All rights reserved.</p>
+              
+              <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> by Saint Peter's Students</span>
+              </div>
+            </div>
+          </footer>
 </html>
