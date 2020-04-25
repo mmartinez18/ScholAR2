@@ -57,6 +57,7 @@ html {
   #example_gif{
     float: none;
     max-width: 100%;
+    width: 100%;
   }
   .column {
     /* width: 25%; */
